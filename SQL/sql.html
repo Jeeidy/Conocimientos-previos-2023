@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>REFERENCIAS</title>
+    </head>
+    <body>
+
+        <h1> SQL </h1> 
+    
+
+        <h3>Tipos de Datos</h3>
+
+        <strong>Números: </strong>Si en la base de datos se necesita almacenar números con o sin decimales, se debe pensar en un tipo de dato Númerico, los cuales tienen su categoría dependiendo del valor como lo muestra la siguiente tabla:
+        <br> <br> <br> <br>
+
+        <style>
+            table, th, td{
+                border: 1px solid black;
+            }
+        </style>
+       <table>
+        <tr>
+            <td>TIPO DE DATO</td>
+            <td>TAMAÑO</td>
+            <td>SINTAXIS</td>
+        </tr>
+        <tr>
+            <td>TINYINT</td>
+            <td>0 a 225</td>
+            <td>edad tinyint</td>
+        </tr>
+        <tr>
+            <td>SMALL INT</td>
+            <td>0 a 65535</td>
+            <td>Puntos small int</td>
+        </tr>
+        <tr>
+            <td>MEDIUM INT</td>
+            <td>0 a 16777215</td>
+            <td>Valor_Articulo medium int</td>
+        </tr>
+        <tr>
+            <td>INT</td>
+            <td>0 a 4294967295. A este tipo de campo se le puede declarar un ancho</td>
+            <td>Valor_Venta int (8)</td>
+        </tr>
+        <tr>
+            <td>BIG INT</td>
+            <td>0 a 18,446 * 1036</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>FLOAT(M,D)</td>
+            <td rowspan="">Estos tipos de datos son utilizados para decimales, el tamaño varia según los parámetros. M: Número de la Mantisa D: Número de Decimales
+                <td>Definitiva_materia float (2,1)</td>
+            <tr>
+                <td>DOUBLE(M,D)</td>
+                <td></td>
+                <td>Saldo_cuenta double</td>
+            </tr>
+            <tr>
+                <td>DECIMAL (M,D)(M,D) son opcionales</td>
+                <td></td>
+                <td></td>
+            </tr>
+            </td>
+        </tr>
+    </table>
+<br><br>
+    <strong>Caracteres: </strong> Si en la base de Datos se necesita almacenar caracteres, se debe pensar en un tipo de dato
+    Texto, los cuales tienen su categoría dependiendo de la cantidad de caracteres a almacenar;
+    los tipos de dato texto son los siguientes:
+
+    <br><br>
+
+<style>  
+        </style>
+       <table>
+        <tr>
+            <td>TIPO DE DATO</td>
+            <td>TAMAÑO MAX.</td>
+            <td>SINTAXIS</td>
+        </tr>
+        <tr>
+            <td>CHAR(X)</td>
+            <td>255 bytes</td>
+            <td>PacIdentificacion char (10)</td>
+        </tr>
+        <tr>
+            <td>VARCHAR(X)</td>
+            <td>255 bytes</td>
+            <td>PacNombres varchar (50)</td>
+        </tr>
+        <tr>
+            <td>TINYTEXT</td>
+            <td>255 bytes</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>TINYBLOB</td>
+            <td>  255 bytes</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>TEXT</td>
+            <td>65535 bytes</td>
+            <td>Pacpersonalidad text</td>
+        </tr>
+        <tr>
+            <td>BLOB</td>
+            <td>6535 bytes<td>
+            Pacdescripfisica blob
+        </tr>
+            <tr>
+                <td>MEDIUMTEXT</td>
+                <td>1,6 MB</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>MEDIUMBLOB</td>
+                <td>1,6 MB</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>LONGTEXT</td>
+                <td>4,2 GB</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>LONGBLOB</td>
+                <td>4,2 GB</td>
+                <td></td>
+            </tr>
+    </table>
+    
+    <br><br>
+
+    <strong>Fechas: </strong>Si en la base de Datos se necesita almacenar fechas, se debe pensar en un tipo de dato
+    Date, los cuales tienen su categoría dependiendo del formato que se desee almacenar,
+    estos tipos de datos son los siguientes:
+
+    <br><br>
+
+    <style>  
+    </style>
+   <table>
+    <tr>
+        <td>TIPO</td>
+        <td>RANGO</td>
+        <td>FORMATIVO</td>
+    </tr>
+    <tr>
+        <td>DATE</td>
+        <td>Del 1 de enero de 1001 al 31/12 del 9999</td>
+        <td>año-mes-día</td>
+    </tr>
+    <tr>
+        <td>DATETIME</td>
+        <td>De las 0 horas del 1/1/1001 a las 0 horas del 31/12/9999</td>
+        <td>año-mes-día horas:minutos:segundos</td>
+    </tr>
+    <tr>
+        <td>TIMESTAMP</td>
+        <td>De las 0 horas del 1/1/1970 a las 0 horas del 31/12/2037</td>
+        <td>año-mes-día horas:minutos:segundos</td>
+    </tr>
+    <tr>
+        <td>TIME</td>
+        <td>La hora</td>
+        <td>HH:MM:SS</td>
+    </tr>
+    <tr>
+        <td>YEAR</td>
+        <td>Año desde 1901 a 2037</td>
+        <td>YYYY</td>
+    </tr>
+</table>
+
+<br><br>
+
+<strong>Modificadores: </strong> Además de los tipos de Datos, también es necesario conocer algunos modificadores que se
+utilizan para el manejo de los campos, dichos modificadores se presentan a continuación:
+
+<br><br>
+
+<style>  
+</style>
+<table>
+<tr>
+    <td>MODIFICADOR</td>
+    <td>USO</td>
+    <td>TIPO DE CAMPO QUE APLICA</td>
+</tr>
+<tr>
+    <td>AUTO_INCREMENT</td>
+    <td>El valor se va incrementando automáticamente en cada registro (1,2,3,etc)</td>
+    <td>año-mes-día</td>
+</tr>
+<tr>
+    <td>DATETIME</td>
+    <td>De las 0 horas del 1/1/1001 a las 0 horas del 31/12/9999</td>
+    <td>año-mes-día horas:minutos:segundos</td>
+</tr>
+<tr>
+    <td>TIMESTAMP</td>
+    <td>De las 0 horas del 1/1/1970 a las 0 horas del 31/12/2037</td>
+    <td>año-mes-día horas:minutos:segundos</td>
+</tr>
+<tr>
+    <td>TIME</td>
+    <td>La hora</td>
+    <td>HH:MM:SS</td>
+</tr>
+<tr>
+    <td>YEAR</td>
+    <td>Año desde 1901 a 2037</td>
+    <td>YYYY</td>
+</tr>
+</table>
+
+
+<a href="/index.html">Home</a>
+    </body>
+</html>
