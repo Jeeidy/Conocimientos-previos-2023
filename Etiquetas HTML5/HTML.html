@@ -6,67 +6,120 @@
     </head>
     <body>
 
-        Etiquetas Semánticas:<br> 
+        <header class="header">
 
-Header: Define el encabezado de una página web o sección. <br> 
+            <div class="menu container">
+                <a href="" class="logo">
+                    <img src="/img/logo.png" alt="">
+                </a>
+                <input type="checkbox" id="menu"/>
+                
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="">GITHUB</a></li>
+                        <li><a href="">HTML 5</a></li>
+                        <li><a href="">CSS 3</a></li>
+                        <li><a href="">JAVASCRIPT</a></li>
+                    </ul>
+                </nav>
 
-Nav: Define una sección con enlaces de navegación. <br> 
+                <div class="header-content container">
+                    <div class="header-txt">
+                        <h1>HTML 5</h1>
+                        <p>
+                            HTML 5 es la quinta revisión importante del Lenguaje de Marcado de Hipertexto 
+                            (HyperText Markup Language). Aunque se basa en las bases del HTML tradicional, 
+                            HTML 5 incluye etiquetas adicionales que permiten crear sitios web más modernos 
+                            y compatibles con las tecnologías digitales actuales.
+                        </p>
+                    </div>
+                    <div class="header-img">
+                        <img src="/img/html.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </header>
 
-Section: Define una sección dentro de una página web. <br> 
+        <section class="about">
+        <div class="about-txt">
+            <h2>Etiquetas Semánticas</h2>
+            <p>
+                Header: Define el encabezado de una página web o sección. <br> 
 
-Article: Define un bloque de contenido autónomo que puede existir en cualquier contexto. 
-Puede tener su propio encabezado, pie de página, secciones... Útil para una lista de publicaciones del blog. <br> 
+                Nav: Define una sección con enlaces de navegación. <br> 
+                
+                Section: Define una sección dentro de una página web. <br> 
+                
+                Article: Define un bloque de contenido autónomo que puede existir en cualquier contexto. 
+                Puede tener su propio encabezado, pie de página, secciones... Útil para una lista de publicaciones del blog. <br> 
+                
+                Aside: Define un bloque de contenido que está relacionado con el contenido principal. Generalmente se muestra como una barra lateral.<br>  
+                
+                Footer: Define el pie de página de una página o sección web. <br> 
+                
+                Etiquetas de Texto: <br> 
+                
+                < p >:  Para escribir párrafos <br> 
+                
+                < h1 >: Títulos <br> 
+            </p>
+        </div>
+        </section>
 
-Aside: Define un bloque de contenido que está relacionado con el contenido principal. Generalmente se muestra como una barra lateral.<br>  
+        <section class="agrupacion">
+            <div class="agrupacion-content container">
+                <h2>Etiquetas de Agrupación</h2>
+                <p>
+                    < div >: Capa o división utilizado para agrupar varias etiquetas HTML. <br> 
 
-Footer: Define el pie de página de una página o sección web. <br> 
+                    < p >: Define un párrafo de texto. <br> 
 
-Etiquetas de Texto: <br> 
+                    < main >: Contenedor para englobar la parte principal de la página. <br> 
 
-< p >:  Para escribir párrafos <br> 
+                    < hr >: Indica una separación temática del texto. <br> 
 
-< h1 >: Títulos <br> 
+                    < ol >: Crea una lista numerada (con orden). <br> 
 
-Etiquetas de Agrupación: <br> 
+                    < ul >: Crea una lista donde el orden no importa. <br> 
 
-< div >: Capa o división utilizado para agrupar varias etiquetas HTML. <br> 
+                    < li >: Contiene uno de los ítems de una lista numerada o sin numerar. <br> 
 
-< p >: Define un párrafo de texto. <br> 
-
-< main >: Contenedor para englobar la parte principal de la página. <br> 
-
-< hr >: Indica una separación temática del texto. <br> 
-
-< ol >: Crea una lista numerada (con orden). <br> 
-
-< ul >: Crea una lista donde el orden no importa. <br> 
-
-< li >: Contiene uno de los ítems de una lista numerada o sin numerar. <br> 
-
-< dl >: Crea una lista de definiciones. <br> 
+                    < dl >: Crea una lista de definiciones. <br> 
+                </p>
+            </div>
+        </section>
 
 
-Etiquetas Multimedia: <br> 
+        <section class="multimedia">
+            <div class="multimedia-content container">
+                <h2>Etiquetas de Multimedia</h2>
+                <p>
+                    < img >: <br> 
+                </p>
+            </div>
+        </section>
 
-< img >: <br> 
-
- 
-
-Etiquetas de Tablas: <br> 
-
-< table >: Etiqueta contenedora que tendrá en su interior toda la tabla. <br> 
+        <section class="tabla">
+            <div class="tabla-content container">
+                <h2>Etiquetas de Tablas</h2>
+                <p>
+                    < table >: Etiqueta contenedora que tendrá en su interior toda la tabla. <br> 
 
 < tr >: Table Row. Etiqueta contenedora de cada fila de la tabla. <br> 
 
 < td >: Table Data. Cada una de las celdas de la tabla. <br> 
 
 < th >: Table Header. Cada una de las celdas de cabecera de la tabla. <br> 
+                </p>
+            </div>
+        </section>
 
- 
 
-Etiquetas de formularios: <br> 
-
-< form >: Define un formulario <br> 
+        <section class="formulario">
+            <div class="formulario-content container">
+                <h2>Etiquetas de Formulario</h2>
+                <p>
+                    < form >: Define un formulario <br> 
 
 < label >: Representa el título de un elemento de control de un formulario. <br> 
 
@@ -79,6 +132,19 @@ Etiquetas de formularios: <br>
 < option >: Representa una opción en un elemento < select > o < datalist >. <br> 
 
 < datalist >: Se utiliza junto con la etiqueta < input > para proporcionar una lista de opciones < option > que ayudan a los usuarios a seleccionar un valor mientras escriben en un campo de entrada < input >. <br> 
+                </p>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-links">
+                    <div class="link-img">
+                        <img src="/img/logo.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </footer>
 
         <a href="/index.html">Home</a>
     </body>
